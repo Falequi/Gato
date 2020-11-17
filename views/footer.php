@@ -53,7 +53,7 @@
     <script src="../dist/js/listado.js"></script>
     <script src="../dist/js/gestionUsuario.js"></script>
     <script src="../dist/js/dasboard.js"></script>
-
+    <script src="../dist/js/gestionEditar.js"></script>
 </body>
 
 </html>
