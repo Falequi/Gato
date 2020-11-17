@@ -82,12 +82,14 @@
                             <div class="col-md-6 mb-3"> <!-- Direccion -->
                                         <label for="direccion">Digite su Direccion:*<span id="ldireccion"></span></label>
                                         <input  type="text" class="form-control" id="direccion" 
-                                                placeholder="Digite su direccion" name="direccion" value ="<?php echo $_SESSION['direccion'];?>">
+                                                placeholder="Digite su direccion" name="direccion" 
+                                                value ="<?php echo $_SESSION['direccion'];?>">
                             </div>
                             <div class="col-md-6 mb-3"> <!-- Numero de Telefono-->
                                 <label for="telefono">Telefono:*<span id="ltelefono"></span></label>
                                 <input  type="number" class="form-control telefono" id="telefono" 
-                                        placeholder="Number Phone" name="telefono" value ="<?php echo $_SESSION['telefono'];?>">
+                                        placeholder="Number Phone" name="telefono" 
+                                        value ="<?php echo $_SESSION['telefono'];?>">
                             </div>        
                         </div>
 
@@ -96,8 +98,12 @@
                                 <label for="genero">Genero:*<span id="lgenero"></span></label>
                                 <select class="custom-select d-block w-100 genero" id="genero" name="genero">
                                     <option value="">Seleccione su genero....</option>
-                                    <option value ="femenino">  Femenino</option>
-                                    <option value ="masculino"> Masculino</option>
+                                    <option value ="femenino" 
+                                            <?php echo ($_SESSION['genero']=="femenino")?'selected':""?>
+                                            >  Femenino</option>
+                                    <option value ="masculino" 
+                                            <?php echo ($_SESSION['genero']=="masculino")?'selected':""?>
+                                            > Masculino</option>
                                     <option value ="otro">      Otro</option>
                                 </select>
                             </div>

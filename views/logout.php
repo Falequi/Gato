@@ -12,5 +12,5 @@
                                                 </a>
                                             </td>
                                         </table>    
-                                        <input type="text" id="type" name="type"  value="editar" hidden>
+                                        <input type="text" id="type" name="type"  value="logout" hidden>
                                     </form>
